@@ -1,36 +1,8 @@
 import React from "react";
 import { HiSearch } from "react-icons/hi";
+import { menu } from "../menu";
 
 const SideNav = ({ state, setToggle }) => {
-	// const [toggleState, setToggleState] = useState(1);
-
-	const menu = [
-		{
-			id: 1,
-			name: "Double Mantul",
-		},
-		{
-			id: 2,
-			name: "Double Mantul 2",
-		},
-		{
-			id: 3,
-			name: "Double Mantul 3",
-		},
-		{
-			id: 4,
-			name: "Double Mantul",
-		},
-		{
-			id: 5,
-			name: "Double Mantul 2",
-		},
-		{
-			id: 6,
-			name: "Double Mantul 3",
-		},
-	];
-
 	return (
 		<div className="flex flex-col gap-2 items-center">
 			<div className="relative mb-7">

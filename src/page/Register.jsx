@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import burger from "../assets/image/burger.png";
 
 const Register = () => {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
+	useEffect(() => {
+		scrollToTop();
+	}, []);
+
 	return (
 		<div className="bg-base flex flex-col justify-center items-center pt-8 pb-16">
 			<form className="bg-white rounded-t-lg shadow-lg w-[40%] p-10">
